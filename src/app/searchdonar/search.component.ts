@@ -8,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class SearchComponent implements OnInit {
 
   constructor() { }
+  bloodgroup=""
+  readValue=()=>{
+    let data={
+      "bloodgroup":this.bloodgroup
+  
+    
+    }
+    console.log(data)
+  }
 
+ 
   ngOnInit(): void {
   }
 

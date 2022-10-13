@@ -5,7 +5,7 @@
             <div class="row g-3"> 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="Blood Group">Blood Group</label>
-                    <select name=""  id="" class="form-control">
+                    <select name="bloodgroup"[(ngModel)]="bloodgroup"  id="" class="form-control">
                         <option value="Select">Select</option>
                         <option value="O+">O+</option>
                         <option value="O-">O-</option>
@@ -18,7 +18,7 @@
                     </select>
                 </div>
                  <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-success">SEARCH</button>
+                    <button class="btn btn-success" (click)="readValue()">SEARCH</button>
 
                 </div>
             
