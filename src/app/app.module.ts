@@ -10,6 +10,7 @@ import { DeledonarComponent } from './deledonar/deledonar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ViewAllDonarComponent } from './view-all-donar/view-all-donar.component';
 import{HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms'
 const appRoutes:Routes=[
   {
     path:"",component:AdddonarComponent
@@ -37,7 +38,8 @@ const appRoutes:Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
